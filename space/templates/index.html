@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+#button{
+    height: 60px;
+    width: 100px;
+    border-radius: 30%;
+    margin-left: 10%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: medium;
+    color: black;
+    background-color: rgb(219, 219, 26);
+}
+.body{
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-right: 20%;
+    background-image: url(https://r4.wallpaperflare.com/wallpaper/262/774/423/space-stars-nebula-tylercreatesworlds-wallpaper-29a018cdb1da7dbb263798bff0b156ed.jpg);
+    display: flex;
+    justify-content: space-between;
+    transition:cubic-bezier(0.77, 0, 0.175, 1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s forwards;
+}
+#content{
+    background:transparent;
+    color: white;
+}
+#heading{
+    margin-left: 15%;
+    font-family:'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-size: 60px;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    animation: typing 1.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+#description{
+    font-family:'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    margin-left: 10%;
+    font-size: 25px;
+    font-weight: lighter;
+}
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+    @keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body class="body">
+    <img src="https://png.pngtree.com/png-clipart/20230928/original/pngtree-realistic-illustration-of-a-floating-astronaut-illustrated-in-cartoon-style-for-png-image_13008531.png" alt="" height="500" width="300">
+    <br>
+    <div>
+    <div id="content">
+        <h1 id="heading">Space Education Hub</h1>
+    <h2 id="description">Welcome to the Space Education Hub, your gateway to exploring the wonders of the universe! 
+        Whether you’re a student, educator, or space enthusiast, 
+        we provide a wealth of resources to ignite your passion for space science and exploration.</h2>
+    </div>
+    <button type="button" onclick="location.href='login'" id="button">Let's Start</button>
+    </div>
+
+</body>
+</html>

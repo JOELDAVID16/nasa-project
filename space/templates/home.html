@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url(https://r4.wallpaperflare.com/wallpaper/262/774/423/space-stars-nebula-tylercreatesworlds-wallpaper-29a018cdb1da7dbb263798bff0b156ed.jpg);
+       margin-top: 5%;
+       margin-left: 20%;
+       margin-right: 20%;
+       color: white;
+       opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s forwards;
+
+
+    }
+    #beginner{
+       font-size: 25px;
+    }
+    #main{
+        margin-left: 10%;
+        font-size: 80PX;
+        color: rgb(34, 161, 251);
+        overflow: hidden;
+        transform: scale(0);
+        opacity: 0;
+        animation: scaleIn 1.5s forwards; 
+    }
+    button{
+    height: 40px;
+    width: 80px;
+    border-radius: 30%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: small;
+    color: black;
+    background-color: rgb(37, 208, 74)
+    }
+    h2{
+        overflow: hidden;
+        display: inline-block;
+        white-space: nowrap;
+        animation: typing 2.5s steps(40, end), blink-caret 1.5s step-end infinite;
+    }
+    @keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+    @keyframes scaleIn {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+    }
+    @keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+    }
+
+
+</style>
+<body>
+       <h1 id="main"><img src="" alt="">WELCOME!</h1>
+        <div id="beginner">
+            Welcome to our beginner's hub! Whether you're starting a new journey or exploring a new interest, this is the perfect place for you. 
+            Here, you'll find easy-to-follow resources, helpful tips, and a supportive community to guide you every step of the way. Our goal 
+            is to empower you with the knowledge and confidence you need to succeed. Dive in, explore, and let’s embark on this adventure together!
+            
+        </div>
+        <div>
+            <h1>CHOOSE YOUR DIFFICULTY LEVEL</h1>
+            <h2>First time at space topic--<button onclick="location.href='beginner'">Click Me</button></h2>
+        <br>
+        <h2>Know some knowledge about space --<button onclick="location.href='intermediate'">Click Me</button></h2>
+       <br>
+       <h2>Have good knowledge about space-- <button onclick="location.href='advance'">Click Me</button></h2>
+        </div>
+</body>
+</html>
